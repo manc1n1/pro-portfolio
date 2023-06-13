@@ -1,8 +1,10 @@
-# 02-challenge
+# Pro-Portfolio
 
 Advanced CSS Challenge: Professional Portfolio
 
 ## GitHub Pages
+
+https://manc1n1.github.io/pro-portfolio/
 
 ## Description
 
@@ -38,4 +40,4 @@ https://codepen.io/FelixRilling/pen/vNJoMy
 
 ## Badges
 
-![02-challenge](https://img.shields.io/github/languages/top/manc1n1/02-challenge)
+![02-challenge](https://img.shields.io/github/languages/top/manc1n1/pro-portfolio)
