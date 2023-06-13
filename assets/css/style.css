@@ -1,3 +1,4 @@
+/* set  variables */
 :root {
     --black: #020202;
     --dark-green: #0d2818;
@@ -7,17 +8,20 @@
     --starred: #f9e2af;
 }
 
+/* universal */
 * {
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
 }
 
+/* body element */
 body {
     background-color: var(--black);
     font-family: "Fira Code", monospace;
 }
 
+/* header element */
 header {
     background-color: var(--dark-green);
     padding: 20px;
@@ -26,6 +30,7 @@ header {
     z-index: 3;
 }
 
+/* img element nested within the header element */
 header img {
     float: left;
     width: 50px;
@@ -33,16 +38,20 @@ header img {
     transition: transform 0.2s;
 }
 
+/* img element hover selector 
+nested within the header element */
 header img:hover {
     transform: scale(1.5);
 }
 
+/* h1 element */
 h1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
+/* nav element nested within header element */
 header nav {
     display: flex;
     flex-direction: row;
@@ -51,35 +60,44 @@ header nav {
     font-size: 20px;
 }
 
+/* ul nested within nav 
+element within header element */
 header nav ul {
     list-style-type: none;
 }
 
+/* li element nested within ul nested 
+within nav element within header element */
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* a element */
 a {
     color: var(--malachite);
     text-decoration: none;
 }
 
+/* hover id */
 #hover {
     color: var(--sea-green);
     text-decoration: none;
 }
 
+/* p element */
 p {
     color: var(--sea-green);
     font-size: 18px;
 }
 
+/* main element */
 main {
     display: flex;
     flex-direction: column;
 }
 
+/* section element */
 section {
     scroll-margin-top: 150px;
     margin-top: 100px;
@@ -87,6 +105,7 @@ section {
     padding-right: 120px;
 }
 
+/* h2 element */
 h2 {
     text-align: center;
     margin: 0 auto;
@@ -98,6 +117,7 @@ h2 {
     width: 200px;
 }
 
+/* h2 nth child selector 2 */
 h2:nth-child(2) {
     color: #67f3da;
     animation: glitch2 2.5s infinite;
@@ -105,6 +125,7 @@ h2:nth-child(2) {
     width: 200px;
 }
 
+/* h2 nth child selector 3 */
 h2:nth-child(3) {
     color: #f16f6f;
     animation: glitch3 2.5s infinite;
@@ -112,10 +133,12 @@ h2:nth-child(3) {
     width: 200px;
 }
 
+/* article element */
 article {
     margin-top: 50px;
 }
 
+/* contacts class */
 .contacts {
     display: flex;
     justify-content: space-evenly;
@@ -123,12 +146,14 @@ article {
     font-size: 20px;
 }
 
+/* hover id with hover selector */
 #hover:hover {
     color: var(--malachite);
     text-decoration: underline;
     transition: all 0.2s ease-in-out;
 }
 
+/* img element nested within hero element */
 hero img {
     display: flex;
     justify-content: center;
@@ -136,6 +161,7 @@ hero img {
     object-fit: cover;
 }
 
+/* figure element */
 figure {
     display: flex;
     justify-content: center;
@@ -143,6 +169,7 @@ figure {
     margin: 20px;
 }
 
+/* a element nested within figure element */
 figure a {
     margin-top: 20px;
     border-style: solid;
@@ -152,20 +179,26 @@ figure a {
     padding: 75px;
 }
 
+/* a element with hover selector 
+nested within figure element */
 figure a:hover {
     opacity: 0.5;
 }
 
+/* img element nested within figure element */
 figure img {
     width: 250px;
     height: 250px;
     object-fit: cover;
 }
 
+/* figcaption element nested 
+within figure element */
 figure figcaption {
     text-align: center;
 }
 
+/* apps class */
 .apps {
     display: flex;
     flex-flow: row wrap;
@@ -173,6 +206,7 @@ figure figcaption {
     align-items: center;
 }
 
+/* a element nested within apps class */
 .apps a {
     margin-top: 20px;
     border-style: solid;
@@ -182,20 +216,25 @@ figure figcaption {
     padding: 10px;
 }
 
+/* a element with hover selector 
+nested within apps class */
 .apps a:hover {
     opacity: 0.5;
 }
 
+/* img element nested within apps class */
 .apps img {
     width: 250px;
     height: 250px;
     object-fit: cover;
 }
 
+/* figcaption element nested within apps class */
 .apps figcaption {
     text-align: center;
 }
 
+/* footer element */
 footer {
     display: flex;
     justify-content: center;
@@ -206,10 +245,13 @@ footer {
     margin-top: 50px;
 }
 
+/* heart id */
 #heart {
     margin-left: 10px;
 }
 
+/* Media Query for a screen that 
+has a width of up to 768px */
 @media screen and (max-width: 768px) {
     header nav {
         font-size: 15px;
@@ -228,6 +270,8 @@ footer {
     }
 }
 
+/* Media Query for a screen that 
+has a width of up to 530px */
 @media screen and (max-width: 530px) {
     figure {
         margin: 0;
@@ -254,6 +298,7 @@ footer {
     }
 }
 
+/* keyframes for glitch animation */
 /* credit: https://codepen.io/FelixRilling/pen/vNJoMy */
 @keyframes glitch1 {
     0% {
