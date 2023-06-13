@@ -153,6 +153,10 @@ article {
     transition: all 0.2s ease-in-out;
 }
 
+.svg:hover {
+    fill: var(--malachite);
+}
+
 /* img element nested within hero element */
 hero img {
     display: flex;
@@ -250,6 +254,18 @@ footer {
     margin-left: 10px;
 }
 
+/* span elemented nested within 
+footer element with hover selector */
+footer:hover span {
+    display: none;
+}
+
+/* footer element with hover and after selectors */
+footer:hover::after {
+    margin-left: 10px;
+    content: "🖤";
+}
+
 /* Media Query for a screen that 
 has a width of up to 768px */
 @media screen and (max-width: 768px) {
@@ -261,12 +277,8 @@ has a width of up to 768px */
         padding-left: 50px;
         padding-right: 50px;
     }
-    .contacts {
-        flex-direction: column;
-        text-align: center;
-    }
-    .contacts li {
-        margin-top: 10px;
+    .svg {
+        height: 2rem;
     }
 }
 
