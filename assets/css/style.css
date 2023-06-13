@@ -81,6 +81,7 @@ main {
 }
 
 section {
+    scroll-margin-top: 150px;
     margin-top: 100px;
     padding-left: 120px;
     padding-right: 120px;
@@ -170,7 +171,6 @@ figure figcaption {
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
-    margin: 70px;
 }
 
 .apps a {
@@ -232,6 +232,9 @@ footer {
     figure {
         margin: 0;
         margin-top: 50px;
+    }
+    figure a {
+        padding: 10px;
     }
     figure img {
         object-fit: cover;
